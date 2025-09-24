@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Box Model Explanation</title>
+  <style>
+    .box {
+      width: 300px;
+      background-color: #f0f8ff;
+      margin: 40px;       /* Outer spacing */
+      padding: 20px;      /* Inner spacing */
+      border: 5px solid #0074D9; /* Border thickness and color */
+    }
+    .content {
+      background-color: #7FDBFF;
+      color: #001F3F;
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+    /* Optional: visually separate each box model layer */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: #0074D9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Box Model Demonstration</h1>
+
+  <div class="box">
+    <div class="content">
+      This is the <strong>content</strong> area.<br>
+      It contains the actual text or images.
+    </div>
+  </div>
+
+  <p><strong>Explanation:</strong></p>
+  <ul style="max-width: 400px; margin: 0 auto; text-align: left;">
+    <li><strong>Content:</strong> The innermost area where your content like text or images appear.</li>
+    <li><strong>Padding:</strong> Space between the content and the border (inside spacing).</li>
+    <li><strong>Border:</strong> Surrounds the padding and content, can have thickness and color.</li>
+    <li><strong>Margin:</strong> Outer spacing that separates this box from other elements.</li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iframe Example</title>
+  <style>
+    .frame-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    iframe {
+      border: 2px solid black;
+      width: 100%;
+    }
+    #frame1 { height: 65%; }
+    #frame2 { height: 15%; }
+    #frame3 { height: 20%; }
+  </style>
+</head>
+<body>
+<div class="frame-container">
+  <iframe id="frame1" srcdoc='<h3>Image Frame</h3><img src="./image (3).png">' ></iframe>
+  <iframe id="frame2" srcdoc='<h3>Paragraph Frame</h3><p>The above frame shows my friend Narayana. He is a wonderful person who has always been there for me through thick and thin. Narayanas kindness and support make him a truly special friend, and I am grateful to have him in my life.</p>' ></iframe>
+  <iframe id="frame3" srcdoc='<h3>Hyperlinks Frame</h3><a href="https://www.google.com" target="_blank">Google</a><br><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>' ></iframe>
+</div>
+</body>
+</html>

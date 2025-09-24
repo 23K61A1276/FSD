@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Selector Types Example</title>
+  <style>
+    /* i. Simple selectors */
+
+    /* Element selector */
+    p {
+      color: darkblue;
+    }
+
+    /* ID selector */
+    #unique {
+      background-color: lightyellow;
+      padding: 10px;
+      border: 1px solid gold;
+    }
+
+    /* Class selector */
+    .highlight {
+      color: darkred;
+      font-weight: bold;
+    }
+
+    /* Group selector */
+    h1, h2, h3 {
+      font-family: 'Arial Black', Arial, sans-serif;
+      color: darkgreen;
+    }
+
+    /* Universal selector */
+    * {
+      font-family: Verdana, sans-serif;
+    }
+
+    /* ii. Combinator selectors */
+
+    /* Descendant selector: p inside div */
+    div p {
+      font-size: 16px;
+    }
+
+    /* Child selector: direct p child of section */
+    section > p {
+      color: teal;
+    }
+
+    /* Adjacent sibling selector: p immediately after h2 */
+    h2 + p {
+      background-color: #f0f0f0;
+      padding: 5px;
+    }
+
+    /* General sibling selector: any p sibling after h3 */
+    h3 ~ p {
+      font-style: italic;
+      color: gray;
+    }
+
+    /* iii. Pseudo-class selector */
+
+    /* Hover effect on links */
+    a:hover {
+      color: orange;
+      text-decoration: underline;
+    }
+
+    /* First child of ul */
+    ul li:first-child {
+      font-weight: bold;
+    }
+
+    /* iv. Pseudo-element selector */
+
+    /* Before paragraph content */
+    p::before {
+      content: "👉 ";
+      color: purple;
+    }
+
+    /* After h1 content */
+    h1::after {
+      content: " - Welcome!";
+      color: blue;
+      font-size: 0.8em;
+    }
+
+    /* v. Attribute selector */
+
+    /* Select input elements with type="text" */
+    input[type="text"] {
+      border: 2px solid green;
+      padding: 5px;
+    }
+
+    /* Select links with target="_blank" */
+    a[target="_blank"] {
+      color: crimson;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Heading One</h1>
+  <h2>Heading Two</h2>
+  <p>This paragraph is styled with element selector.</p>
+
+  <div>
+    <p>This paragraph is inside a div (descendant selector).</p>
+  </div>
+
+  <section>
+    <p>This paragraph is a direct child of section (child selector).</p>
+    <h3>Heading Three</h3>
+    <p>This paragraph follows h3 and is affected by general sibling selector.</p>
+  </section>
+
+  <h2>Adjacent Sibling Example</h2>
+  <p>This paragraph is immediately after h2 (adjacent sibling selector).</p>
+
+  <p id="unique">This paragraph uses the ID selector.</p>
+
+  <p class="highlight">This paragraph uses the class selector.</p>
+
+  <ul>
+    <li>First item (first-child pseudo-class)</li>
+    <li>Second item</li>
+  </ul>
+
+  <a href="https://example.com" target="_blank">Link with target="_blank" (attribute selector)</a><br>
+  <a href="https://example.com">Regular Link</a>
+
+  <form>
+    <label for="name">Name (text input with attribute selector):</label>
+    <input type="text" id="name" name="name" />
+  </form>
+
+</body>
+</html>
