@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semantic HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    article {
+      flex: 3;
+      background: #e9f0ff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    aside {
+      flex: 1;
+      background: #f7f9fc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    figure {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    figcaption {
+      font-style: italic;
+      color: #555;
+      margin-top: 5px;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    .highlight {
+      background-color: #ffeb3b;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Awesome Blog</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#articles">Articles</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <header>
+        <h2>Exploring the Wonders of Nature</h2>
+        <p><small>Posted on <span>September 24, 2025</span> by <span class="highlight">Admin</span></small></p>
+      </header>
+
+      <figure>
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Beautiful Nature Scenery" width="100%" />
+  <figcaption>A breathtaking view of a mountain valley at sunrise.</figcaption>
+</figure>
+
+
+      <section>
+        <p>Nature has always been a source of inspiration and awe. Whether it is the towering mountains, vast oceans, or lush forests, the natural world offers endless beauty and mystery.</p>
+        <p>In this article, we will explore some of the most amazing natural wonders and the best ways to experience them.</p>
+      </section>
+
+      <section>
+        <h3>Why We Should Preserve Nature</h3>
+        <p>The health of our planet depends on preserving these ecosystems. <span class="highlight">Conservation efforts</span> are critical to maintaining biodiversity and ensuring future generations can enjoy these wonders.</p>
+      </section>
+
+      <footer>
+        <p>Article footer: Thank you for reading! Feel free to share your thoughts in the comments.</p>
+      </footer>
+    </article>
+
+    <aside>
+      <h3>About Me</h3>
+      <p>Hello! I'm a passionate nature lover and writer. I enjoy traveling, photography, and sharing stories about the environment.</p>
+
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="#post1">Top 10 Hiking Trails</a></li>
+        <li><a href="#post2">The Beauty of Waterfalls</a></li>
+        <li><a href="#post3">Birdwatching Basics</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Awesome Blog. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

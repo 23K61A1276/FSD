@@ -1,0 +1,6 @@
+/* styles.css */
+.external-style {
+  color: darkgreen;       /* property: color, value: darkgreen */
+  font-weight: bold;      /* property: font-weight, value: bold */
+  font-size: 20px;        /* property: font-size, value: 20px */
+}

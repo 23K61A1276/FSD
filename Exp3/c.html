@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Style Types Example</title>
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Internal CSS -->
+  <style>
+    /* Selector: #internal-style (id selector) */
+    /* Property: background-color */
+    /* Value: lightblue */
+    #internal-style {
+      background-color: lightblue;
+      padding: 10px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Inline style -->
+  <p style="color: red; font-size: 18px;">
+    This paragraph uses <strong>inline style</strong> (selector: element, property: color, value: red).
+  </p>
+
+  <!-- Internal style -->
+  <p id="internal-style">
+    This paragraph uses <strong>internal style</strong> (selector: #internal-style, property: background-color, value: lightblue).
+  </p>
+
+  <!-- External style -->
+  <p class="external-style">
+    This paragraph uses <strong>external style</strong> (selector: .external-style, property: color, value: darkgreen).
+  </p>
+
+</body>
+</html>
