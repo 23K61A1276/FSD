@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Object Example</title>
+</head>
+<body>
+    <h1 id="header">Hello, World!</h1>
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        function changeContent() {
+            // Access element by id
+            const header = document.getElementById('header');
+            
+            // Change innerHTML property
+            header.innerHTML = "Content Changed!";
+
+            // Use document title property
+            document.title = "Updated Document Title";
+
+            // Alert the current URL using document.URL property
+            alert("Current URL: " + document.URL);
+        }
+    </script>
+</body>
+</html>

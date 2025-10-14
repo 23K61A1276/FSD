@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object Example</title>
+</head>
+<body>
+    <button onclick="showWindowProperties()">Show Window Info</button>
+
+    <script>
+        function showWindowProperties() {
+            alert("Window width: " + window.innerWidth);
+            alert("Window height: " + window.innerHeight);
+            alert("Browser language: " + window.navigator.language);
+            
+            // Open a new window
+            window.open("https://www.example.com", "_blank", "width=400,height=400");
+
+            // Scroll down the window by 100 pixels
+            window.scrollBy(0, 100);
+        }
+    </script>
+</body>
+</html>
