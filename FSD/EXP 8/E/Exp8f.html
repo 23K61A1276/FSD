@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Denomination Calculator</title></head>
+<body>
+<script>
+    let amount = parseInt(prompt("Enter amount:"));
+    const denominations = [100, 50, 20, 10, 5, 2, 1];
+
+    document.write("<h3>Denomination Breakdown:</h3>");
+    for (let denom of denominations) {
+        if (amount >= denom) {
+            let count = Math.floor(amount / denom);
+            document.write(`${count} - ${denom}'s<br>`);
+            amount = amount % denom;
+        }
+    }
+</script>
+</body>
+</html>
